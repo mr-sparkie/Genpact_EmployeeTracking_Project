@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Gojo Palette */
+:root {
+    --gojo-red: #F05454;
+    --gojo-blue: #5A8DEE;
+    --gojo-purple: #967ADC;
+    --gojo-background: #f0f0f0;
+}
+
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gojo-background);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--gojo-red);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tabs button.active {
+    background-color: var(--gojo-blue);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    padding: 10px 15px;
+    background-color: var(--gojo-blue);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: var(--gojo-purple);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--gojo-red);
+    color: #fff;
+}
